@@ -3,66 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
     <title>Contributing to Open Source Part I: The Easy Way</title>
   </head>
   <body>
     <header>
-      <nav>
-        <span>
-          <p>hbg</p>
-          <p>logo</p>
-        </span>
-        <form action="https://www.youtube.com/watch?v=">
-          <input type="search" />
-          <button type="submit">search</button>
-          <p>mic</p>
-        </form>
-        <span>
-          <p>record</p>
-          <p>apps</p>
-          <p>notify</p>
-          <p>img</p>
-        </span>
-      </nav>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper inline">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a href="#">hbg</a></li>
+              <li><a href="#">logo</a></li>
+            </ul>
+
+            <form class="inline" action="https://www.youtube.com/watch?v=">
+              <input type="search" />
+              <button type="submit">search</button>
+              <p>mic</p>
+            </form>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">record</a></li>
+              <li><a href="#">apps</a></li>
+              <li><a href="#">notify</a></li>
+              <li><a href="#">img</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/V74l_zS1x8E"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <h1>Contributing to Open Source Part I: The Easy Way</h1>
-        <span>
-          <span>
+        <div id="mainVideo" class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/V74l_zS1x8E"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="flow-text">
+          Contributing to Open Source Part I: The Easy Way
+        </p>
+        <span class="inline">
+          <span class="inline">
             <p>video stats</p>
             <p>.</p>
             <p>uploaded</p>
           </span>
-          <span>
-            <p>like</p>
-            <p>likes</p>
-            <p>dislike</p>
-            <p>dislikes</p>
-          </span>
-          <span>
-            <p>icon share</p>
-            <p>icon save</p>
-            <p>...</p>
+          <span class="inline">
+            <span class="inline">
+              <p>like</p>
+              <p>likes</p>
+              <p>dislike</p>
+              <p>dislikes</p>
+            </span>
+            <span class="inline">
+              <p>icon share</p>
+              <p>icon save</p>
+              <p>...</p>
+            </span>
           </span>
         </span>
       </div>
       <hr />
-      <span>
+      <span class="inline">
         <p>img</p>
+
         <div>
-          <p>The Odin Project</p>
-          <p>stats</p>
-        </div>
-        <div>
+          <span class="inline">
+            <div class="container">
+              <p>The Odin Project</p>
+              <p>stats</p>
+            </div>
+
+            <input
+              type="button"
+              name="subscribe"
+              id="subscribe"
+              value="subscribe"
+            />
+          </span>
           <p>description</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -71,30 +96,29 @@
             reiciendis minus.
           </p>
         </div>
-        <input type="button" name="subscribe" id="subscribe" value="subscribe"/>
       </span>
       <hr />
     </main>
     <aside>
-      <span>
+      <span class="inline">
         <p>thumbnail</p>
         <p><strong>title</strong></p>
         <p>channel</p>
         <p>stats</p>
       </span>
-      <span>
+      <span class="inline">
         <p>thumbnail</p>
         <p><strong>title</strong></p>
         <p>channel</p>
         <p>stats</p>
       </span>
-      <span>
+      <span class="inline">
         <p>thumbnail</p>
         <p><strong>title</strong></p>
         <p>channel</p>
         <p>stats</p>
       </span>
-      <span>
+      <span class="inline">
         <p>thumbnail</p>
         <p><strong>title</strong></p>
         <p>channel</p>
@@ -103,11 +127,11 @@
       <p>thumbnail</p>
     </aside>
     <footer>
-      <span>
+      <span class="inline">
         <p>16 comments</p>
         <p>icon sort</p>
       </span>
-      <span>
+      <span class="inline">
         <p>img</p>
         <input
           type="text"
@@ -116,12 +140,12 @@
           placeholder="Add a public comment"
         />
       </span>
-      <span>
+      <span class="inline">
         <p>img</p>
         <div>
           <p>name 3 years ago (edited)</p>
           <p>comment made by person goes here</p>
-          <span>
+          <span class="inline">
             <p>like</p>
             <p>likes</p>
             <p>dislike</p>
@@ -130,12 +154,12 @@
           </span>
         </div>
       </span>
-      <span>
+      <span class="inline">
         <p>img</p>
         <div>
           <p>name 3 years ago (edited)</p>
           <p>comment made by person goes here</p>
-          <span>
+          <span class="inline">
             <p>like</p>
             <p>likes</p>
             <p>dislike</p>
@@ -144,12 +168,12 @@
           </span>
         </div>
       </span>
-      <span>
+      <span class="inline">
         <p>img</p>
         <div>
           <p>name 3 years ago (edited)</p>
           <p>comment made by person goes here</p>
-          <span>
+          <span class="inline">
             <p>like</p>
             <p>likes</p>
             <p>dislike</p>
