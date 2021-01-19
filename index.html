@@ -4,33 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
     <title>Contributing to Open Source Part I: The Easy Way</title>
   </head>
+
   <body>
     <header>
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper inline">
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-              <li><a href="#">hbg</a></li>
-              <li><a href="#">logo</a></li>
+            <ul id="nav-mobile" class="left">
+              <li>
+                <a class="hide-on-small-and-down" href="#">
+                  <i class="material-icons">menu</i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1200px-YouTube_Logo_2017.svg.png"
+                    alt="YouTube Logo 2017.svg"
+                /></a>
+              </li>
             </ul>
 
-            <form class="inline" action="https://www.youtube.com/watch?v=">
+            <form id="searchBar" class="hide-on-small-and-down" action="https://www.youtube.com/watch?v=">
               <input type="search" />
-              <button type="submit">search</button>
-              <p>mic</p>
+              <button class="btn wrap-icon">
+                <i class="material-icons muted">search</i>
+              </button>
+              <i class="material-icons">keyboard_voice</i>
             </form>
 
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">record</a></li>
-              <li><a href="#">apps</a></li>
-              <li><a href="#">notify</a></li>
-              <li><a href="#">img</a></li>
+            <ul id="nav-mobile" class="right">
+              <li>
+                <a href="#">
+                  <i class="material-icons">video_call</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">apps</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">notifications</i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="profile-pic"
+                    src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+                    alt="profile-pic"
+                /></a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -46,93 +87,115 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p class="flow-text">
-          Contributing to Open Source Part I: The Easy Way
-        </p>
+        <p>Contributing to Open Source Part I: The Easy Way</p>
         <span class="inline">
-          <span class="inline">
-            <p>video stats</p>
-            <p>.</p>
-            <p>uploaded</p>
-          </span>
-          <span class="inline">
-            <span class="inline">
-              <p>like</p>
-              <p>likes</p>
-              <p>dislike</p>
-              <p>dislikes</p>
-            </span>
-            <span class="inline">
-              <p>icon share</p>
-              <p>icon save</p>
-              <p>...</p>
-            </span>
+          <p class="muted">61,855 views • Feb 27, 2014</p>
+          <span class="inline muted">
+            <p>
+              <i class="material-icons">thumb_up</i>
+            </p>
+
+            <p>457</p>
+            <p>
+              <i class="material-icons">thumb_down</i>
+            </p>
+            <p>19</p>
+            <p>
+              <i id="share" class="material-icons">reply</i>
+            </p>
+            <p>SHARE</p>
+            <p>
+              <i class="material-icons">playlist_add</i>
+            </p>
+            <p>SAVE</p>
+            <p>. . .</p>
           </span>
         </span>
       </div>
       <hr />
       <span class="inline">
-        <p>img</p>
+        <img
+          class="profile-pic"
+          src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+          alt="profile-pic"
+        />
 
         <div>
           <span class="inline">
-            <div class="container">
+            <div>
               <p>The Odin Project</p>
-              <p>stats</p>
+              <p class="muted">1.04K subscribers</p>
             </div>
 
             <input
+              class="btn wrap-icon"
               type="button"
               name="subscribe"
               id="subscribe"
               value="subscribe"
             />
           </span>
-          <p>description</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             est et doloribus error adipisci ex quae dolores ipsam? Similique,
             labore quasi. Maiores magnam doloremque dicta dolorum eos ea
             reiciendis minus.
           </p>
+
+          <p class="muted">SHOW MORE</p>
         </div>
       </span>
       <hr />
     </main>
-    <aside>
-      <span class="inline">
+    <aside class="container">
+      <span class="inline-nowrap">
         <p>thumbnail</p>
-        <p><strong>title</strong></p>
-        <p>channel</p>
-        <p>stats</p>
+        <div>
+          <p>title</p>
+          <p class="muted">channel</p>
+          <p class="muted">80K views • 4 years ago</p>
+        </div>
       </span>
-      <span class="inline">
+      <span class="inline-nowrap">
         <p>thumbnail</p>
-        <p><strong>title</strong></p>
-        <p>channel</p>
-        <p>stats</p>
+        <div>
+          <p>title</p>
+          <p class="muted">channel</p>
+          <p class="muted">80K views • 4 years ago</p>
+        </div>
       </span>
-      <span class="inline">
+      <span class="inline-nowrap">
         <p>thumbnail</p>
-        <p><strong>title</strong></p>
-        <p>channel</p>
-        <p>stats</p>
+        <div>
+          <p>title</p>
+          <p class="muted">channel</p>
+          <p class="muted">80K views • 4 years ago</p>
+        </div>
       </span>
-      <span class="inline">
+      <span class="inline-nowrap">
         <p>thumbnail</p>
-        <p><strong>title</strong></p>
-        <p>channel</p>
-        <p>stats</p>
+        <div>
+          <p>title</p>
+          <p class="muted">channel</p>
+          <p class="muted">80K views • 4 years ago</p>
+        </div>
       </span>
-      <p>thumbnail</p>
     </aside>
-    <footer>
-      <span class="inline">
-        <p>16 comments</p>
-        <p>icon sort</p>
+    <footer class="container">
+      <span class="inline-nowrap">
+        <p>3 comments</p>
+        <p class="muted"><i class="material-icons">sort</i></p>
+        <p class="muted">SORT BY</p>
       </span>
-      <span class="inline">
-        <p>img</p>
+      <span class="inline-nowrap">
+        <p>
+          <a href="#"
+            ><img
+              class="profile-pic"
+              src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+              alt="profile-pic"
+          /></a>
+        </p>
         <input
           type="text"
           name="comment"
@@ -140,45 +203,86 @@
           placeholder="Add a public comment"
         />
       </span>
-      <span class="inline">
-        <p>img</p>
+      <span class="inline-nowrap">
+        <p>
+          <a href="#"
+            ><img
+              class="profile-pic"
+              src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+              alt="profile-pic"
+          /></a>
+        </p>
         <div>
-          <p>name 3 years ago (edited)</p>
-          <p>comment made by person goes here</p>
-          <span class="inline">
-            <p>like</p>
-            <p>likes</p>
-            <p>dislike</p>
-            <p>dislikes</p>
-            <p>reply</p>
+          <p>name 3 months ago (edited)</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            repudiandae. Ad vero beatae magni minus neque assumenda dignissimos
+            autem tenetur in doloribus corrupti doloremque, iusto debitis labore
+            architecto! Animi, eligendi?
+          </p>
+          <span class="inline-nowrap muted">
+            <p>
+              <i class="material-icons">thumb_up</i>
+            </p>
+
+            <p>7</p>
+            <p>
+              <i class="material-icons">thumb_down</i>
+            </p>
+            <p>9</p>
+            <p>REPLY</p>
           </span>
         </div>
       </span>
-      <span class="inline">
-        <p>img</p>
+      <span class="inline-nowrap">
+        <p>
+          <a href="#"
+            ><img
+              class="profile-pic"
+              src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+              alt="profile-pic"
+          /></a>
+        </p>
         <div>
-          <p>name 3 years ago (edited)</p>
+          <p>name 1 years ago</p>
           <p>comment made by person goes here</p>
-          <span class="inline">
-            <p>like</p>
-            <p>likes</p>
-            <p>dislike</p>
-            <p>dislikes</p>
-            <p>reply</p>
+          <span class="inline-nowrap muted">
+            <p>
+              <i class="material-icons">thumb_up</i>
+            </p>
+
+            <p>57</p>
+            <p>
+              <i class="material-icons">thumb_down</i>
+            </p>
+            <p></p>
+            <p>REPLY</p>
           </span>
         </div>
       </span>
-      <span class="inline">
-        <p>img</p>
+      <span class="inline-nowrap">
+        <p>
+          <a href="#"
+            ><img
+              class="profile-pic"
+              src="https://www.ominini.com/google-homepage/img/profile-pic.png"
+              alt="profile-pic"
+          /></a>
+        </p>
         <div>
-          <p>name 3 years ago (edited)</p>
-          <p>comment made by person goes here</p>
-          <span class="inline">
-            <p>like</p>
-            <p>likes</p>
-            <p>dislike</p>
-            <p>dislikes</p>
-            <p>reply</p>
+          <p>name 2 years ago</p>
+          <p>rem fugiat maiores in dicta ipsam suscipit? Eligendi?</p>
+          <span class="inline-nowrap muted">
+            <p>
+              <i class="material-icons">thumb_up</i>
+            </p>
+
+            <p>567</p>
+            <p>
+              <i class="material-icons">thumb_down</i>
+            </p>
+            <p>1</p>
+            <p>REPLY</p>
           </span>
         </div>
       </span>
