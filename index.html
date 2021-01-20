@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="hide-on-small-and-down">
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper inline">
@@ -40,7 +40,11 @@
               </li>
             </ul>
 
-            <form id="searchBar" class="hide-on-small-and-down" action="https://www.youtube.com/watch?v=">
+            <form
+              id="searchBar"
+              class="hide-on-med-and-down"
+              action="https://www.youtube.com/watch?v="
+            >
               <input type="search" />
               <button class="btn wrap-icon">
                 <i class="material-icons muted">search</i>
@@ -87,101 +91,99 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>Contributing to Open Source Part I: The Easy Way</p>
-        <span class="inline">
-          <p class="muted">61,855 views • Feb 27, 2014</p>
-          <span class="inline muted">
-            <p>
-              <i class="material-icons">thumb_up</i>
-            </p>
+        <div id="info">
+          <p>Contributing to Open Source Part I: The Easy Way</p>
+          <span class="inline">
+            <p class="muted">61,855 views • Feb 27, 2014</p>
+            <span class="inline muted">
+              <p>
+                <i class="material-icons">thumb_up</i>
+              </p>
 
-            <p>457</p>
-            <p>
-              <i class="material-icons">thumb_down</i>
-            </p>
-            <p>19</p>
-            <p>
-              <i id="share" class="material-icons">reply</i>
-            </p>
-            <p>SHARE</p>
-            <p>
-              <i class="material-icons">playlist_add</i>
-            </p>
-            <p>SAVE</p>
-            <p>. . .</p>
+              <p>457</p>
+              <p>
+                <i class="material-icons">thumb_down</i>
+              </p>
+              <p>19</p>
+              <p>
+                <i id="share" class="material-icons">reply</i>
+              </p>
+              <p>SHARE</p>
+              <p>
+                <i class="material-icons">playlist_add</i>
+              </p>
+              <p>SAVE</p>
+              <p>. . .</p>
+            </span>
           </span>
-        </span>
+        </div>
       </div>
       <hr />
-      <span class="inline">
+      <div id="description">
         <img
           class="profile-pic"
           src="https://www.ominini.com/google-homepage/img/profile-pic.png"
           alt="profile-pic"
         />
-
         <div>
-          <span class="inline">
-            <div>
-              <p>The Odin Project</p>
-              <p class="muted">1.04K subscribers</p>
-            </div>
-
-            <input
-              class="btn wrap-icon"
-              type="button"
-              name="subscribe"
-              id="subscribe"
-              value="subscribe"
-            />
-          </span>
-          <p>
+          <p>The Odin Project</p>
+          <p class="muted">1.04K subscribers</p>
+          <p class="hide-on-small-and-down">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             est et doloribus error adipisci ex quae dolores ipsam? Similique,
             labore quasi. Maiores magnam doloremque dicta dolorum eos ea
             reiciendis minus.
           </p>
-
-          <p class="muted">SHOW MORE</p>
+          <p class="muted hide-on-small-and-down">SHOW MORE</p>
         </div>
-      </span>
+        <input
+          class="btn wrap-icon"
+          type="button"
+          name="subscribe"
+          id="subscribe"
+          value="subscribe"
+        />
+      </div>
       <hr />
     </main>
     <aside class="container">
-      <span class="inline-nowrap">
-        <p>thumbnail</p>
+      <span class="thumbnail">
+        <img class="responsive-img" src="img/1.jpg" alt="thumbnail" />
         <div>
-          <p>title</p>
-          <p class="muted">channel</p>
-          <p class="muted">80K views • 4 years ago</p>
+          <p>Data Visualization with D3.js - Full Tutorial Course</p>
+          <p class="muted">freeCodeCamp.org • 80K views • 4 years ago</p>
         </div>
       </span>
-      <span class="inline-nowrap">
-        <p>thumbnail</p>
+      <span class="thumbnail">
+        <img class="responsive-img" src="img/2.jpg" alt="thumbnail" />
         <div>
-          <p>title</p>
-          <p class="muted">channel</p>
-          <p class="muted">80K views • 4 years ago</p>
+          <p>But how does bitcoin actually work?</p>
+          <p class="muted">freeCodeCamp.org • 80K views • 4 years ago</p>
         </div>
       </span>
-      <span class="inline-nowrap">
-        <p>thumbnail</p>
+      <span class="thumbnail">
+        <img class="responsive-img" src="img/3.jpg" alt="thumbnail" />
         <div>
-          <p>title</p>
-          <p class="muted">channel</p>
-          <p class="muted">80K views • 4 years ago</p>
+          <p>AWS Certified Developer - Associate 2020</p>
+          <p class="muted">3Blue1Brown • 80K views • 4 years ago</p>
         </div>
       </span>
-      <span class="inline-nowrap">
-        <p>thumbnail</p>
+      <span class="thumbnail">
+        <img class="responsive-img" src="img/4.jpg" alt="thumbnail" />
         <div>
-          <p>title</p>
-          <p class="muted">channel</p>
-          <p class="muted">80K views • 4 years ago</p>
+          <p>But how does bitcoin actually work?</p>
+          <p class="muted">3Blue1Brown • 80K views • 4 years ago</p>
+        </div>
+      </span>
+      <span class="thumbnail">
+        <img class="responsive-img" src="img/1.jpg" alt="thumbnail" />
+        <div>
+          <p>Data Visualization with D3.js - Full Tutorial Course</p>
+          <p class="muted">freeCodeCamp.org • 80K views • 4 years ago</p>
         </div>
       </span>
     </aside>
-    <footer class="container">
+    <footer>
       <span class="inline-nowrap">
         <p>3 comments</p>
         <p class="muted"><i class="material-icons">sort</i></p>
@@ -213,7 +215,9 @@
           /></a>
         </p>
         <div>
-          <p>name 3 months ago (edited)</p>
+          <p class="muted hide-on-small-and-down">
+            The Odin Project • 3 months ago (edited)
+          </p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
             repudiandae. Ad vero beatae magni minus neque assumenda dignissimos
@@ -244,7 +248,9 @@
           /></a>
         </p>
         <div>
-          <p>name 1 years ago</p>
+          <p class="muted hide-on-small-and-down">
+            The Odin Project • 1 years ago
+          </p>
           <p>comment made by person goes here</p>
           <span class="inline-nowrap muted">
             <p>
@@ -270,7 +276,9 @@
           /></a>
         </p>
         <div>
-          <p>name 2 years ago</p>
+          <p class="muted hide-on-small-and-down">
+            The Odin Project • 2 years ago
+          </p>
           <p>rem fugiat maiores in dicta ipsam suscipit? Eligendi?</p>
           <span class="inline-nowrap muted">
             <p>
